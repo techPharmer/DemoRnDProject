@@ -7,7 +7,8 @@
 | Planning  | Project Setup   | Create folder structure       | Anuradha | In Progress | 08-May-2026 | 08-May-2026 | High     | Repository created     |                        |
 | Discovery | Requirements    | Define problem statement      | Anuradha | Not Started | 09-May-2026 |             | High     | None                   |                        |
 | Discovery | Requirements    | Capture business requirements | Anuradha | Not Started | 09-May-2026 |             | High     | Problem statement      |                        |
-| Discovery | Source Analysis | Identify sample datasets      | Anuradha | Not Started | 10-May-2026 |             | High     | Requirements           |                        |
+| Discovery | Source Analysis | Identify sample datasets      | Anuradha | Done        | 10-May-2026 |             | High     | Requirements           |                        |
+| Discovery | Source Analysis | Domain unerstanding           | Anuradha | Done        | 10-May-2026 |             | High     | Requirements 
 | Discovery | Source Analysis | Perform source profiling      | Anuradha | Not Started | 10-May-2026 |             | Medium   | Dataset selected       |                        |
 | Design    | Architecture    | Create solution architecture  | Anuradha | Not Started | 11-May-2026 |             | High     | Requirements complete  |                        |
 | Design    | Architecture    | Design data architecture      | Anuradha | Not Started | 11-May-2026 |             | High     | Solution architecture  |                        |
