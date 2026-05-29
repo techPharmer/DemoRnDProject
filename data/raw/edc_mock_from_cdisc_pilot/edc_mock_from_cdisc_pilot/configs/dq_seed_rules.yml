@@ -1,0 +1,29 @@
+edc_subjects:
+  - rule_id: SUBJ_REQUIRED_SEX
+    column: SEX_REPORTED
+    check: not_null
+    severity: medium
+  - rule_id: SUBJ_REQUIRED_AGE
+    column: AGE_VALUE
+    check: not_null
+    severity: medium
+edc_vitals:
+  - rule_id: VITAL_VALUE_REQUIRED
+    column: RESULT_VALUE_RAW
+    check: not_null
+    severity: medium
+  - rule_id: VITAL_UNIT_KNOWN
+    column: RESULT_UNIT_RAW
+    check: allowed_values
+    values: [mmHg, BEATS/MIN, IN, LB, F]
+    severity: low
+  - rule_id: WEIGHT_NOT_NEGATIVE
+    condition: VITAL_TEST_CODE == 'WEIGHT'
+    column: RESULT_VALUE_RAW
+    check: numeric_greater_than
+    threshold: 0
+    severity: high
+  - rule_id: VITAL_DUPLICATE_RECORD
+    check: duplicate
+    columns: [EDC_SUBJECT_ID, VITAL_RECORD_ID]
+    severity: high

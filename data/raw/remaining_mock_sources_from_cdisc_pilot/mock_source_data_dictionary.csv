@@ -1,0 +1,10 @@
+file_name,field_name,description
+metadata/study_master.csv,STUDY_ID,Study identifier
+metadata/site_master.csv,SITE_ID,Clinical site identifier
+metadata/study_site.csv,STUDY_SITE_ID,Bridge between study and site
+metadata/visit_master.csv,VISIT_NUM,Planned visit number
+metadata/treatment_arm_master.csv,ARM_CODE,Treatment arm code
+iwrs/iwrs_randomization.csv,RANDOMIZATION_ID,IWRS randomization identifier
+iwrs/iwrs_drug_dispense.csv,DISPENSE_ID,Drug kit dispensing record identifier
+central_lab/lab_sample_collection.csv,SAMPLE_ID,Vendor sample identifier
+central_lab/lab_results.csv,TEST_CODE,Central lab test code

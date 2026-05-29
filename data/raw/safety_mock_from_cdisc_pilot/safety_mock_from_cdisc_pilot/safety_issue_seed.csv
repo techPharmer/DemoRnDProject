@@ -1,0 +1,4 @@
+ISSUE_ID,ISSUE_TYPE,SOURCE_TABLE,SOURCE_RECORD_ID,SEVERITY,STATUS,RECOMMENDED_ACTION
+ISS-SAF-001,UNMAPPED_SAFETY_PATIENT,safety_cases,PV-10001,HIGH,OPEN,Verify patient identifier and update subject crosswalk or source case.
+ISS-SAF-002,EVENT_END_BEFORE_START,safety_case_events,PV-10002-EVT-01,MEDIUM,OPEN,Raise query to confirm event start/end dates.
+ISS-SAF-003,SERIOUS_FLAG_MISMATCH,safety_cases/safety_case_events,PV-10003,HIGH,OPEN,Reconcile seriousness between safety case and event-level record.

@@ -1,0 +1,4 @@
+RULE_ID,RULE_NAME,JOIN_KEYS,SEVERITY
+IWRS_RECON_001,IWRS assignment arm should match EDC planned/actual arm,USUBJID,HIGH
+IWRS_RECON_002,Randomized subject should have non-null kit ID unless assignment cancelled,IWRS_SUBJECT_ID,MEDIUM
+IWRS_RECON_003,Dispense date should not be before randomization date,USUBJID + DISPENSE_DATE,HIGH

@@ -1,0 +1,9 @@
+file_name,field_name,description
+safety_cases.csv,SAFETY_CASE_ID,Unique pharmacovigilance case identifier
+safety_cases.csv,SAFETY_PATIENT_ID,Safety-system patient identifier requiring crosswalk to EDC subject
+safety_cases.csv,SERIOUS_CASE_FLAG,Case-level seriousness flag
+safety_case_events.csv,SAFETY_EVENT_ID,Safety-system event identifier
+safety_case_events.csv,REPORTED_TERM,Free text / reported adverse event term
+safety_case_events.csv,MEDDRA_PREFERRED_TERM,Mock coded MedDRA preferred term
+safety_case_events.csv,CAUSALITY_ASSESSMENT,Investigator/safety causality assessment
+subject_crosswalk_safety.csv,CANONICAL_SUBJECT_ID,Canonical subject ID based on CDISC USUBJID

@@ -1,0 +1,9 @@
+file,rows
+edc_subjects.csv,306
+edc_visits.csv,2741
+edc_vitals.csv,29648
+study_master.csv,1
+site_master.csv,17
+treatment_arm_master.csv,4
+visit_master.csv,16
+subject_crosswalk.csv,306

@@ -1,0 +1,5 @@
+RULE_ID,RULE_NAME,LEFT_SOURCE,RIGHT_SOURCE,JOIN_KEYS,SEVERITY,EXPECTED_RESULT
+SAF_RECON_001,Safety case patient must map to EDC subject,safety_cases,subject_crosswalk,SAFETY_PATIENT_ID,HIGH,All safety cases should map to one canonical subject
+SAF_RECON_002,Serious safety event should have serious case flag,safety_case_events,safety_cases,SAFETY_CASE_ID,HIGH,SERIOUS_EVENT_FLAG=Y should align with SERIOUS_CASE_FLAG=Y
+SAF_RECON_003,Safety event end date should be after start date,safety_case_events,,,MEDIUM,EVENT_END_DATE >= EVENT_START_DATE when populated
+SAF_RECON_004,Potential duplicate safety event,safety_case_events,safety_case_events,SAFETY_PATIENT_ID + MEDDRA_PREFERRED_TERM + EVENT_START_DATE,MEDIUM,No duplicate-ish cases for same patient/event/date

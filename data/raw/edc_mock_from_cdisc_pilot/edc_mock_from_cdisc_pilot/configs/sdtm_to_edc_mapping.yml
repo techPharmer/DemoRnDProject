@@ -1,0 +1,28 @@
+# Reverse-engineered mock EDC mappings from CDISC pilot SDTM JSON
+subjects:
+  source_domain: DM
+  source_file: dm.json
+  output_file: data/mock_sources/edc/edc_subjects.csv
+  mappings:
+    STUDYID: STUDY_CODE
+    SITEID: SITE_NUM
+    SUBJID: PATIENT_NUM
+    USUBJID: SOURCE_SUBJECT_ID
+    DMDTC: CONSENT_DATE
+    RFXSTDTC: FIRST_TREATMENT_DATE
+    RFXENDTC: LAST_TREATMENT_DATE
+    AGE: AGE_VALUE
+    SEX: SEX_REPORTED
+    RACE: RACE_REPORTED
+    ARMCD: PLANNED_ARM_CODE
+    ACTARMCD: ACTUAL_ARM_CODE
+visits:
+  source_domain: VS
+  source_file: vs.json
+  output_file: data/mock_sources/edc/edc_visits.csv
+  grain: one row per subject per visit/date
+vitals:
+  source_domain: VS
+  source_file: vs.json
+  output_file: data/mock_sources/edc/edc_vitals.csv
+  grain: one row per subject per visit per vital test/timepoint

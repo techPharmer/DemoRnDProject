@@ -1,0 +1,5 @@
+RULE_ID,RULE_NAME,JOIN_KEYS,SEVERITY
+LAB_RECON_001,Every lab result should map to a known sample,SAMPLE_ID,HIGH
+LAB_RECON_002,Every received sample should have expected chemistry/CBC results,SAMPLE_ID,MEDIUM
+LAB_RECON_003,Lab result subject should map to EDC subject,LAB_SUBJECT_ID,HIGH
+LAB_RECON_004,Result unit should be allowed for test code,TEST_CODE + RESULT_UNIT,MEDIUM

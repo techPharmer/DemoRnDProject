@@ -1,0 +1,5 @@
+study_code,arm_code,arm_description,drug_code,planned_dose,route
+CDISCPILOT01,Pbo,Placebo,PLACEBO,0,ORAL
+CDISCPILOT01,Xan_Hi,Xanomeline High Dose,XANOMELINE,High Dose,ORAL
+CDISCPILOT01,Xan_Lo,Xanomeline Low Dose,XANOMELINE,Low Dose,ORAL
+CDISCPILOT01,Scrnfail,Screen Failure,N/A,N/A,ORAL
